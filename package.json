@@ -1,0 +1,49 @@
+{
+  "name": "stellara",
+  "version": "1.0.0",
+  "description": "Decentralized NFT trading platform and metaverse",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test --type nodejs",
+    "test:solidity": "hardhat test --type solidity",
+    "deploy": "hardhat run scripts/deploy.ts",
+    "deploy:contracts": "hardhat run scripts/deploy-contracts.ts",
+    "node": "hardhat node",
+    "clean": "hardhat clean",
+    "dev": "cd frontend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:start": "cd frontend && npm run start",
+    "frontend:install": "cd frontend && npm install",
+    "setup": "scripts/setup-project.bat",
+    "setup:unix": "chmod +x scripts/setup-project.sh && ./scripts/setup-project.sh",
+    "docs": "cd docs && npm run dev",
+    "lint": "cd frontend && npm run lint",
+    "lint:fix": "cd frontend && npm run lint:fix"
+  },
+  "keywords": [
+    "nft",
+    "blockchain",
+    "metaverse",
+    "decentralized"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ignition": "^3.0.0",
+    "@nomicfoundation/hardhat-toolbox-viem": "^5.0.0",
+    "@types/node": "^22.8.5",
+    "forge-std": "foundry-rs/forge-std#v1.9.4",
+    "hardhat": "^3.0.0",
+    "typescript": "~5.8.0",
+    "viem": "^2.30.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.4.0",
+    "@openzeppelin/contracts-upgradeable": "^5.4.0",
+    "@pinata/sdk": "^2.1.0",
+    "ipfs-http-client": "^60.0.1"
+  }
+}
